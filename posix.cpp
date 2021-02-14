@@ -19,3 +19,19 @@ int main()
 
 return 0;
 }
+
+//OR 
+
+//SHORT VERSION
+
+#include<iostream>
+#include<unistd.h>
+using namespace std;
+int main()
+{
+if(_POSIX_VERSION)
+    cout<<"System conforms to POSIX"<<_POSIX_VERSION<<endl;
+else
+    cout<<"_POSIX_VERSION undefined\n";
+return 0;
+}
