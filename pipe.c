@@ -17,7 +17,7 @@ if ((pid = fork()) < 0)
 else if (pid > 0) { 
     /* parent */
     close(fd[0]);
-    write(fd[1], "Hello World", sizeof("Hello World"));
+    write(fd[1], "Hello World", 12);
 } 
 else 
 { 
